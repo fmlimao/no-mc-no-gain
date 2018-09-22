@@ -13,9 +13,30 @@ var App = new Vue({
     data: {
         phrases: [
             '<b>MC</b>?',
+            '<b>MC</b>?',
+            'Hoje é dia de se estragar! Vá em frente, pode ir no <b>MC</b>!!!',
             'Hoje é dia de se estragar! Vá em frente, pode ir no <b>MC</b>!!!',
             'Cara, hoje eu to de bom humor, então se você for no <b>MC</b> eu posso fingir q não vi...',
+            'Cara, hoje eu to de bom humor, então se você for no <b>MC</b> eu posso fingir q não vi...',
+            'Cara, hoje eu to de bom humor, então se você for no <b>MC</b> eu posso fingir q não vi...',
             'Hoje é dia de comer uma delicisa comida na <b>ATIVA</b>!',
+            'Hoje é dia de comer uma delicisa comida na <b>ATIVA</b>!',
+            'Hoje é dia de comer uma delicisa comida na <b>ATIVA</b>!',
+            'Hoje é dia de comer uma delicisa comida na <b>ATIVA</b>!',
+            'Hoje é dia de comer uma delicisa comida na <b>ATIVA</b>!',
+            'Hoje é dia de comer uma delicisa comida na <b>ATIVA</b>!',
+            'Hoje é dia de comer uma delicisa comida na <b>ATIVA</b>!',
+            'Hoje é dia de comer uma delicisa comida na <b>ATIVA</b>!',
+            'Hoje é dia de comer uma delicisa comida na <b>ATIVA</b>!',
+            'Hoje você pode ir <b>comer fora</b>, mas nada de MC, ok?',
+            'Hoje você pode ir <b>comer fora</b>, mas nada de MC, ok?',
+            'Hoje você pode ir <b>comer fora</b>, mas nada de MC, ok?',
+            'Hoje você pode ir <b>comer fora</b>, mas nada de MC, ok?',
+            'Hoje você pode ir <b>comer fora</b>, mas nada de MC, ok?',
+            'Hoje você pode ir <b>comer fora</b>, mas nada de MC, ok?',
+            'Hoje você pode ir <b>comer fora</b>, mas nada de MC, ok?',
+            'Hoje você pode ir <b>comer fora</b>, mas nada de MC, ok?',
+            'Hoje você pode ir <b>comer fora</b>, mas nada de MC, ok?',
         ],
         phrase: '',
         modal: {
@@ -42,6 +63,11 @@ var App = new Vue({
                 App.phrase = current_prhase;
                 App.modal.loading = false;
             }, 1000);
+        },
+        erase: function () {
+            var now = getFormattedDate();
+            localStorage.removeItem('current_prhase_' + now);
+            App.selectLunch();
         },
     },
 });
