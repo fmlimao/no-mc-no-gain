@@ -1,0 +1,22 @@
+{
+  "name": "No Mc No Gain",
+  "homepage": "nomcnogain.projetosmacedo.com.br",
+  "authors": [
+    "Leandro Macedo <fmlimao@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "vue": "^2.5.17",
+    "bootstrap": "^3.3.7",
+    "jquery": "^2.*"
+  }
+}

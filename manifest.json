@@ -1,0 +1,13 @@
+{
+  "name": "No Mc No Gain",
+  "short_name": "No Mc No Gain",
+  "icons": [{
+      "src": "images/icons/icon.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#FF0012",
+  "theme_color": "#FF0012"
+}

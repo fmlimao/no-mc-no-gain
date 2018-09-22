@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>No MC No Gain</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="./images/icons/icon.png">
+    <link rel="icon" type="image/png" href="./images/icons/icon.png" />
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/app.css">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="No MC No Gain">
+    <meta name="msapplication-TileImage" content="./images/icons/icon.png">
+    <meta name="msapplication-TileColor" content="#FF0012">
+</head>
+
+<body>
+
+    <div id="AppVue">
+        <div class="app">
+            <h1>No MC No Gain</h1>
+
+            <p>
+                <button type="button" class="btn btn-lg btn-theme" @click.prevent="selectLunch()">HOJE É DIA DE COMER...</button>
+            </p>
+        </div>
+
+        <div class="box-modal" v-if="modal.opened">
+            <div class="loading" v-if="modal.loading">
+                <img src="./images/Blocks-1s-120px.svg" alt="Carregando...">
+            </div>
+
+            <div class="result" v-else>
+                <p class="result-text" v-html="phrase"></p>
+
+                <p>
+                    <button type="button" class="btn btn-theme" @click.prevent="modal.opened = false">Fechar</button>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./bower_components/vue/dist/vue.min.js"></script>
+    <script src="./script/app.js"></script>
+</body>
+
+</html>

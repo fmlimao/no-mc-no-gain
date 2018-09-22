@@ -1,0 +1,102 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-color: #D30013;
+}
+
+.app {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -65px;
+    height: 100px;
+}
+
+h1 {
+    margin: 0;
+    height: 50px;
+    line-height: 50px;
+    font-size: 40px;
+    text-align: center;
+    color: #F0CD49;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, .4);
+}
+
+.app p {
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+}
+
+.btn-theme.btn-lg {
+    padding: 18px 28px;
+}
+
+.btn-theme {
+    color: #fff;
+    background-color: #ba0011;
+    border-color: #87000c;
+}
+
+.btn-theme:focus, .btn-theme.focus {
+    color: #fff;
+    background-color: #ba0011;
+    border-color: #87000c;
+}
+
+.btn-theme:hover {
+    color: #fff;
+    background-color: #ba0011;
+    border-color: #87000c;
+}
+
+.btn-theme:active, .btn-theme.active, .open>.dropdown-toggle.btn-theme {
+    color: #fff;
+    background-color: #ba0011;
+    border-color: #87000c;
+}
+
+.btn-theme:active:hover, .btn-theme:active:focus, .btn-theme:active.focus {
+    color: #fff;
+    background-color: #a1000f;
+    border-color: #6e000a;
+}
+
+.btn-theme:active, .btn-theme.active, .open>.dropdown-toggle.btn-theme {
+    color: #fff;
+    background-image: none;
+}
+
+.box-modal {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    right: 15px;
+    background-color: #fff;
+    border: 1px solid #87000c;
+    border-radius: 4px;
+    margin-top: -75px;
+    padding: 15px;
+    height: 150px;
+}
+
+.box-modal .loading {
+    text-align: center;
+}
+
+.box-modal .result p {
+    text-align: center;
+}
+
+.box-modal .result .result-text {
+    font-size: 20px;
+}
+
+.box-modal .result .result-text b {
+    color: #87000c;
+}
