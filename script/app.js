@@ -31,12 +31,12 @@ var App = new Vue({
 
             setTimeout(function () {
                 var now = getFormattedDate();
-                var current_prhase = sessionStorage.getItem('current_prhase_' + now);
+                var current_prhase = localStorage.getItem('current_prhase_' + now);
 
                 if (!current_prhase) {
                     var i = getRndInteger(0, App.phrases.length - 1);
                     current_prhase = App.phrases[i];
-                    sessionStorage.setItem('current_prhase_' + now, current_prhase);
+                    localStorage.setItem('current_prhase_' + now, current_prhase);
                 }
 
                 App.phrase = current_prhase;
